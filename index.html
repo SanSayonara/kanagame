@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kana Game | SanSayonara Doing Things</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Roboto:wght@400;500;700&dfamily=Hachi+Maru+Pop&family=Potta+One&family=Reggae+One&family=RocknRoll+One&family=Shippori+Mincho+B1:wght@400;500&family=Stick&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="header">
+      <div class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </div>
+      <div class="header__logo-container">
+        <div class="header__logo-icon">
+          <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385.12 425.02">
+            <path
+              d="M159.65,211.37a261.92,261.92,0,0,1-35.75-4.07l3.58,30-2.17-28C136.18,210.58,149.18,211.21,159.65,211.37Z" />
+            <path
+              d="M272.91,230.62a520.45,520.45,0,0,1-52.5,10.5c-14.4,42-39.9,94.5-64.2,128.4l-36.3-18.6c22.53-27.95,45.61-69.19,59.17-101h-.88c-17.1,0-35.1-1.2-49.5-2.4l-.4-3.36-.82-6.87-2.17-28c10.87,1.26,23.87,1.89,34.34,2.05h0c2.16.09,4.24.13,6.21.13q1.35,0,2.55-.09h0c7.82-.56,11.55-3.89,14.54-10.41,8.7-18.9,12.6-78.9,12.6-111.3H128.1C117,168.9,88.5,216,34.8,254.1L0,225.9c12.3-6.9,27.3-17.1,39.3-29.4,27.9-27.6,42.9-61.2,49.5-106.8H49.2c-10.2,0-26.7,0-39.6,1.2V51.6c12.6,1.2,28.2,2.1,39.6,2.1H92.1c.3-8.4.6-17.1.6-26.1A222,222,0,0,0,90.6,0h44.1c-.9,6.9-1.5,19.5-1.8,26.7-.3,9.3-.6,18.3-1.2,27h56.4a139.44,139.44,0,0,0,22.5-2.1l26.1,12.6c-.9,4.8-2.1,12.6-2.1,15.9-.66,17.88-2,51.37-5.34,82.93L242,164.32c-2.4,9.6-6.3,24.9-10.8,41.1a367.78,367.78,0,0,0,40.5-9.6Z" />
+            <path
+              d="M165.21,211.42c-1.73,0-3.59,0-5.52,0,2.16.09,4.24.13,6.21.13q1.35,0,2.55-.09Zm-37.73,25.85.53,6.85.29,0Z" />
+            <path
+              d="M385.12,242l-21.31,31.5c-17.39-13.8-51.6-33.3-72-42.6l19.2-29.7C332.61,210.52,369.81,230.92,385.12,242Z" />
+            <path
+              d="M314,334.12c-.6-15-1.5-29.4-1.8-38.1-.3-13.2-.9-25.8,0-38.4h-37.5c.6,18.3,2.1,45,3.3,67.2-6.9-.6-13.5-1.2-20.7-1.2-41.7,0-66.3,22.5-66.3,51.9,0,33,29.4,49.5,66.6,49.5,42.6,0,57.9-21.6,57.9-49.5v-3c16.5,9.9,30,22.5,40.5,32.1l20.11-32.1C360.81,358.72,339.81,343.72,314,334.12Zm-34.8,28.5c0,16.5-6.3,27.9-27,27.9-16.5,0-25.8-7.5-25.8-18.6,0-10.5,11.1-18.3,28.5-18.3a107.77,107.77,0,0,1,24.3,3Z" />
+          </svg>
+        </div>
+        <p class="header__logo-text">
+          Japanese With SanSayonara
+        </p>
+      </div>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Learn Kanji</a>
+        <a href="#">Learn Words</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="game-container">
+      <div class="game">
+        <div class="game__title">Kana Game</div>
+        <div class="game__screen">
+          <p class="current-kana noto-sans-jp-font game-screen-text">あ</p>
+        </div>
+        <div class="game__question">How is this character written in roumaji?</div>
+        <div class="game__form">
+          <input class="remove-focus-effects" type="text" id="game-response-field" placeholder="Roumaji" maxlength="4">
+          <input class="game__button remove-focus-effects" type="button" value="Check" id="game-check-button">
+        </div>
+        <div class="game__options">
+          <input id="game-hint-button" class="game__button remove-focus-effects" type="button" value="Hint?">
+          <input id="game-stats-button" class="game__button remove-focus-effects" type="button" value="Stats">
+          <input id="game-settings-button" class="game__button remove-focus-effects" type="button" value="Settings">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-container">
+    <div class="footer">
+      <p class="footer__text">SanSayonara Doing Things™ </p>
+    </div>
+  </footer>
+  <div class="hidden-things">
+    <div class="overlay-blocker-background"></div>
+    <div class="overlays">
+      <div id="hint-overlay" class="overlay-container">
+        <div class="overlay">
+          <div class="current-kana noto-sans-jp-font overlay__kana">あ</div>
+          <div class="overlay__title">It's only a character, get over it</div>
+          <div class="overlay__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          </div>
+          <input class="overlay__close-button remove-focus-effects" type="button" value="Got it">
+        </div>
+      </div>
+      <div id="stats-overlay" class="overlay-container">
+        <div class="overlay">
+          <div class="overlay__logo-container">
+            <svg class="overlay__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385.12 425.02">
+              <path
+                d="M159.65,211.37a261.92,261.92,0,0,1-35.75-4.07l3.58,30-2.17-28C136.18,210.58,149.18,211.21,159.65,211.37Z" />
+              <path
+                d="M272.91,230.62a520.45,520.45,0,0,1-52.5,10.5c-14.4,42-39.9,94.5-64.2,128.4l-36.3-18.6c22.53-27.95,45.61-69.19,59.17-101h-.88c-17.1,0-35.1-1.2-49.5-2.4l-.4-3.36-.82-6.87-2.17-28c10.87,1.26,23.87,1.89,34.34,2.05h0c2.16.09,4.24.13,6.21.13q1.35,0,2.55-.09h0c7.82-.56,11.55-3.89,14.54-10.41,8.7-18.9,12.6-78.9,12.6-111.3H128.1C117,168.9,88.5,216,34.8,254.1L0,225.9c12.3-6.9,27.3-17.1,39.3-29.4,27.9-27.6,42.9-61.2,49.5-106.8H49.2c-10.2,0-26.7,0-39.6,1.2V51.6c12.6,1.2,28.2,2.1,39.6,2.1H92.1c.3-8.4.6-17.1.6-26.1A222,222,0,0,0,90.6,0h44.1c-.9,6.9-1.5,19.5-1.8,26.7-.3,9.3-.6,18.3-1.2,27h56.4a139.44,139.44,0,0,0,22.5-2.1l26.1,12.6c-.9,4.8-2.1,12.6-2.1,15.9-.66,17.88-2,51.37-5.34,82.93L242,164.32c-2.4,9.6-6.3,24.9-10.8,41.1a367.78,367.78,0,0,0,40.5-9.6Z" />
+              <path
+                d="M165.21,211.42c-1.73,0-3.59,0-5.52,0,2.16.09,4.24.13,6.21.13q1.35,0,2.55-.09Zm-37.73,25.85.53,6.85.29,0Z" />
+              <path
+                d="M385.12,242l-21.31,31.5c-17.39-13.8-51.6-33.3-72-42.6l19.2-29.7C332.61,210.52,369.81,230.92,385.12,242Z" />
+              <path
+                d="M314,334.12c-.6-15-1.5-29.4-1.8-38.1-.3-13.2-.9-25.8,0-38.4h-37.5c.6,18.3,2.1,45,3.3,67.2-6.9-.6-13.5-1.2-20.7-1.2-41.7,0-66.3,22.5-66.3,51.9,0,33,29.4,49.5,66.6,49.5,42.6,0,57.9-21.6,57.9-49.5v-3c16.5,9.9,30,22.5,40.5,32.1l20.11-32.1C360.81,358.72,339.81,343.72,314,334.12Zm-34.8,28.5c0,16.5-6.3,27.9-27,27.9-16.5,0-25.8-7.5-25.8-18.6,0-10.5,11.1-18.3,28.5-18.3a107.77,107.77,0,0,1,24.3,3Z" />
+            </svg>
+          </div>
+          <div class="overlay__title">Your stats</div>
+          <div class="overlay__text overlay__stats-text-container">
+            <p class="overlay__stats-text--green">Good answers: <span id="good-answers-count">0</span></p>
+            <p class="overlay__stats-text--red">Bad answers: <span id="bad-answers-count">0</span></p>
+            <p class="overlay__stats-text--black">Total answers: <span id="total-answers-count">0</span></p>
+          </div>
+          <input class="overlay__close-button remove-focus-effects" type="button" value="Got it">
+        </div>
+      </div>
+      <div id="settings-overlay" class="overlay-container">
+        <div class="overlay">
+          <div class="current-kana noto-sans-jp-font overlay__kana">あ</div>
+          <div class="overlay__title">Settings</div>
+          <div class="overlay__text">
+            <label for="font-selector">Kana font:</label>
+            <select name="font-selector" id="font-selector">
+              <option value="0" selected>Noto Sans JP</option>
+              <option value="1">Hachi Miru Pop</option>
+              <option value="2">Potta One</option>
+              <option value="3">Reggae One</option>
+              <option value="4">RocknRoll One</option>
+              <option value="5">Shippori Mincho B1</option>
+              <option value="6">Stick</option>
+            </select>
+          </div>
+          <input class="overlay__close-button remove-focus-effects" type="button" value="Got it">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

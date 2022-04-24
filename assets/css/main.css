@@ -1,0 +1,477 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+
+body {
+    min-width: 375px;
+}
+
+.header-container {
+    background-color: #ff8800;
+    height: 7.375rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    margin: 1.6875rem;
+    margin-top: 0;
+    align-items: center;
+}
+
+.header__menu {
+    display: none;
+    width: 50.64px;
+    height: 50.64px;
+    fill: white;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    color: white;
+    fill: white;
+    transition: color 0.3s, fill 0.3s ease-in;
+}
+
+.header__logo-icon {
+    display: inline-block;
+    margin-right: 0.6875rem;
+}
+
+.header__logo-svg {
+    width: 3.7375rem;
+    height: 4.125rem;
+    fill: inherit;
+}
+
+.header__logo-text {
+    color: inherit;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.navigation {
+    justify-self: flex-end;
+}
+
+.navigation a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    text-decoration: none;
+    padding-right: 0.875rem;
+    transition: color 0.3s ease-in;
+}
+
+.navigation a:hover, .header__logo-container:hover {
+    color: rgba(255, 255, 255, 0.87);
+    fill: rgba(255, 255, 255, 0.87);;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9900;
+    min-height: 740px;
+    height: calc(100vh - 7.375rem - 3.375rem);
+}
+
+.game-container {
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: #ff8800;
+    width: 375px;
+    height: 736px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.36s;
+}
+
+.game {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.game__screen {
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 282px;
+    height: 226px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.noto-sans-jp-font {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hachi-maru-pop-font {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.potta-one-font {
+    font-family: 'Potta One', cursive;
+}
+
+.reggae-one-font {
+    font-family: 'Reggae One', cursive;
+}
+
+.rocknroll-one-font {
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.shippori-mincho-b1-font {
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.stick-font {
+    font-family: 'Stick', sans-serif;
+}
+
+.game-screen-text {
+    font-weight: 500;
+    font-size: 146px;
+    color: inherit;
+}
+
+.game__question {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 9.5px;
+}
+
+.game__form {
+    margin-bottom: 19px;
+}
+
+#game-response-field {
+    padding: 13px;
+    width: 168px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ff7300;
+    margin-right: 9px;
+}
+
+.remove-focus-effects:focus {
+    outline: unset;
+}
+
+#game-response-field::placeholder {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.game__button {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: #ff8800;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: background-color 0.2s, color 0.1s ease-in;
+}
+
+.game__button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#game-check-button {
+    width: 105px;
+    height: 45px;
+}
+
+.game__options {
+    display: flex;
+    flex-direction: column;
+}
+
+.game__options input[type="button"] {
+    width: 316px;
+    height: 45px;
+    margin-bottom: 22px;
+}
+
+.footer-container {
+    background-color: #ff8800;
+    height: 3.375rem;
+}
+
+.footer {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.overlay-blocker-background {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.overlay-container {
+    display: block;
+    visibility: collapse;
+    opacity: 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 97%;
+    height: 97%;
+    max-width: 660px;
+    max-height: 508px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: opacity 0.3s ease-in;
+    overflow: hidden;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.overlay__kana {
+    color: black;
+    font-weight: 400;
+    font-size: 7.625rem;
+    margin-bottom: 0.875rem;
+}
+
+.overlay__logo-container {
+    width: 6.46625rem;
+    height: 7.13625rem;
+    margin-bottom: 2rem;
+}
+
+.overlay__title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.9rem;
+}
+
+.overlay__text {
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.overlay__text label, .overlay__text select, .overlay__text option {
+    color: black;
+}
+
+.overlay__stats-text-container {
+    width: fit-content;
+    padding: 0.5em;
+    background-color: rgba(0,0,0,0.07);
+    border-radius: 10px;
+}
+
+.overlay__stats-text-container p {
+    padding: 0.2em;
+}
+
+.overlay__stats-text--green {
+    color: #018F06;
+}
+
+.overlay__stats-text--green span {
+    color: inherit;
+}
+
+.overlay__stats-text--red {
+    color: #FF0303;
+}
+.overlay__stats-text--red span {
+    color: inherit;
+}
+
+.overlay__stats-text--black {
+    color: black;
+}
+
+.overlay__stats-text--black span {
+    color: inherit;
+}
+
+.overlay__close-button {
+    width: 10.25rem;
+    height: 2.375rem;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.overlay__close-button:hover {
+    background-color: rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.8);
+}
+
+.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bad-answer-pc {
+    animation: badAnswerAnimationPC 1s;
+}
+
+.bad-answer-mobile {
+    animation: badAnswerAnimationMobile 1s;
+}
+
+.correct-answer {
+    animation: correctAnswerAnimation 1s;
+}
+
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .header {
+        justify-content: center;
+    }
+
+    .navigation {
+        padding-top: 50px;
+        background-color: #ff8800;
+        display: flex;
+        height: 100vh;
+        width: 60vw;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -64%;
+        z-index: 3;
+        transition: left 0.3s linear;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+    }
+
+    .navigation a:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .navigation-mobile-show {
+        left: 0;
+        height: 100%;
+        width: 64%;
+    }
+
+    .header__menu {
+        display: block;
+        margin-right: auto;
+    }
+
+    .header__logo-container {
+        margin-right: auto;
+    }
+}
+
+
+@keyframes badAnswerAnimationPC {
+    10%, 90% {
+        transform: translate(-1px);
+      }
+      
+    20%, 80% {
+        transform: translate(2px);
+    }
+
+    50% {
+        color: red;
+        background-color: #ff0000;
+    }
+    
+    30%, 50%, 70% {
+        transform: translate(-4px);
+    }
+    
+    40%, 60% {
+        transform: translate(4px);
+    }
+
+}
+
+@keyframes badAnswerAnimationvMobile {
+    50% {
+        color: red;
+        background-color: #ff0000;
+    }
+}
+
+@keyframes correctAnswerAnimation {
+    50% {
+        background-color: #07d851;
+    }
+}
+
